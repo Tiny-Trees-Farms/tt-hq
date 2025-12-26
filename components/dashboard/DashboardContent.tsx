@@ -1,6 +1,7 @@
 "use client";
 
 import OrdersTable from "@/components/dashboard/OrdersTable";
+import MenuSection from "@/components/dashboard/MenuSection";
 import { useNavStore } from "@/lib/stores/nav";
 
 export default function DashboardContent() {
@@ -11,7 +12,7 @@ export default function DashboardContent() {
   }
 
   if (section === "menu") {
-    return <UnderConstruction label="Menu" />;
+    return <MenuSection />;
   }
 
   if (section === "support") {
@@ -32,5 +33,3 @@ function UnderConstruction({ label }: { label: string }) {
     </div>
   );
 }
-
-

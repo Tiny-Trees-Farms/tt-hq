@@ -51,6 +51,18 @@ export default function OrdersTable() {
     }
   }
 
+  {/* TODO: Add function to edit form fields, add form fields, export to CSV */}
+  {/* TODO: Order export fields:
+Customer name
+Phone number
+Task start time
+Task end time
+Delivery notes / Order type / Order amount (payment info, contactless delivery info
+Address info (4 separate lines)
+Internal status (received, processed, etc.)
+**Optional: checkbox to indicate fully complete */}
+  {/* TODO: map for address info */}
+
   useEffect(() => {
     load();
   }, []);
@@ -120,5 +132,3 @@ function formatCell(value: unknown): string {
     return "";
   }
 }
-
-
